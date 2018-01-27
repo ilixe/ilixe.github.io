@@ -1,0 +1,93 @@
+
+.floating-label-form-group {
+  border-bottom: 1px solid #fff;
+  margin-bottom: 0;
+  position: relative;
+  padding-bottom: 0.5em;
+}
+
+.floating-label-form-group input,
+.floating-label-form-group textarea {
+  background: none;
+  border: none;
+  border-radius: 0;
+  padding-left: 0;
+  padding-right: 0;
+  box-shadow: none !important;
+  position: relative;
+  z-index: 1;
+  font-size: 1.5em;
+  resize: none;
+}
+ 
+.floating-label-form-group label {
+  display: block;
+  position: relative;
+  top: 2em;
+  opacity: 0;
+  z-index: 0;
+  font-size: 0.85em;
+  line-height: 1.764705882em;
+  vertical-align: middle;
+  vertical-align: baseline;
+  margin: 0;
+  -webkit-transition: top 0.5s ease, opacity 0.5s ease;
+     -moz-transition: top 0.5s ease, opacity 0.5s ease;
+      -ms-transition: top 0.5s ease, opacity 0.5s ease;
+          transition: top 0.5s ease, opacity 0.5s ease;
+}
+
+.floating-label-form-group-with-value label {
+  top: 0;
+  opacity: 1;
+}
+
+.floating-label-form-group-with-focus label {
+  color: #fff;
+}
+
+.floating-label-form-group-with-focus input{
+	  background: none;
+  border: none;
+  border-radius: 0;
+  padding-left: 0;
+  padding-right: 0;
+  box-shadow: none !important;
+  position: relative;
+  z-index: 1;
+  font-size: 1.5em;
+  resize: none;
+}
+
+form .row:first-child .floating-label-form-group {
+  border-top: 1px solid #ccc;
+}
+
+.form-control1j::placeholder{
+	color:#fff !important;
+}
+ .contact-submit{
+    width: 100%;
+    margin-top: 25px;
+}
+.margin-top-15px{
+	margin-top: 15px;
+}
+.link-color{
+	color:#5ed9da;
+}
+.paddint-padding-0{
+	padding-bottom:0;
+}
+.logo{
+    width: 42px;
+    height: auto;
+}
+.navbar-collapse {
+    flex-basis: 50% !important;
+}
+/*
+.btn-primary.disabled, .btn-primary:disabled {
+    background-color: #fed136;
+    border-color: #007bff;
+}*/

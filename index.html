@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Ilixe is a professional website design and development group in India since 2015. We are Trusted web design service provider." />
+    <meta name="keywords" content="web development India, India web development, website developers India, Indian web developers, website developers in India, web development in India, website development in India, website development India, web design India, website design India" />
+	<meta name="google-site-verification" content="7wntasY-g3W4ikgk4p-EtLUcTyc7A-9wELZv6W5Hkvk" />
+    <title>Ilixe - Technologically Innovating</title>
+	<link rel='shortcut icon' type='image/x-icon' href='/img/logo/favicon.ico' />
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-72227662-11');
+</script>
+<style>
+.hide {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .type > p {
+    text-align: left;
+    margin-left: 25%;
+  }
+}
+
+@media (min-width: 800px) {
+  .type > p {
+    text-align: left;
+    margin-left: 33%;
+  }
+}
+
+.type > p {
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100%;
+  animation: type 4s steps(60, end); 
+
+}
+.type > span{
+  animation: blink 1s infinite;
+}
+@keyframes type{ 
+  from { width: 0; } 
+} 
+
+@keyframes type2{
+  0%{width: 0;}
+  50%{width: 0;}
+  100%{ width: 100; } 
+} 
+
+@keyframes blink{
+  to{opacity: .0;}
+}
+
+::selection{
+  background: black;
+}
+
+
+</style>
+
+  </head>
+  <body id="page-top" ng-controller="myCtrl">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">ILIXE.com</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="https://blog.ilixe.com" target="_blank">Blog</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="masthead">
+      <div class="container">
+        <div class="intro-text">
+          <div class="intro-heading">Welcome to ILIXE.COM</div>
+          <div class="intro-lead-in type">
+            <p class="">Seamless Design</p>
+            <p class="hide">Product Development</p>
+            <p class="hide">Content Writing</p>
+            <p class="hide">Project Management</p>
+            <p class="hide">Amusing Solutions</p>
+            <p class="hide">Limitless Crew</p>
+            <p class="hide">Limitless Creativity</p>
+          </div>
+		  <hr class="intro-divider">
+			<ul class="list-inline intro-social-buttons">
+				<li class="list-inline-item" ng-repeat = "social in webData.socials" style="padding-top: 20px;">
+					<a ng-href="{{social.link}}" class="btn btn-secondary btn-lg" target="_blank">
+						<i class="fa fa-{{social.name}} fa-fw"></i>
+						<span class="network-name">{{social.name}}</span>
+					</a>
+				</li>
+			</ul>
+        </div>
+      </div>
+    </header>
+
+    <section id="services">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">Services</h2>
+            <h3 class="section-subheading text-muted">Web Developer - Graphic Artist - User Experience Designer</h3>
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col-md-4">
+            <span class="fa-stack fa-4x">
+              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+              <i class="fa fa-phone fa-stack-1x fa-inverse"></i>
+            </span>
+            <h4 class="service-heading">Get +1 US Toll Free No</h4>
+            <p class="text-muted">No sim card required just internet. US Toll Phone no as per requirement. Help you in building business comfortably, hit revenue growth targets.</p>
+          </div>
+          <div class="col-md-4">
+            <span class="fa-stack fa-4x">
+              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+              <i class="fa fa-desktop fa-stack-1x fa-inverse"></i>
+            </span>
+            <h4 class="service-heading">Web Development</h4>
+            <p class="text-muted">Our expert's team uses the moderm cutting edge technologies to build web applications that are stunning, robust and scalable. You would say awesome!</p>
+          </div>
+		  
+		  <div class="col-md-4">
+            <span class="fa-stack fa-4x">
+              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+              <i class="fa fa-server  fa-stack-1x fa-inverse"></i>
+            </span>
+            <h4 class="service-heading">Web & Cloud Hosting</h4>
+            <p class="text-muted">Our server are available with SSD in most of the regions without any bandwith limitation.</p>
+          </div>
+		  <div class="col-md-4">
+            <span class="fa-stack fa-4x">
+              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+              <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
+            </span>
+            <h4 class="service-heading">Responsive Design</h4>
+            <p class="text-muted">Our web-development specialists have an artist’s eye for beautiful UI/UX. Our webapps are highly functional, faster and provide outstanding user experience on any device, mobile, tablet or desktop.</p>
+          </div>
+		  
+          <div class="col-md-4">
+            <span class="fa-stack fa-4x">
+              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+              <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
+            </span>
+            <h4 class="service-heading">Web Security</h4>
+            <p class="text-muted">Combining advanced testing technologies with extensive hands-on experience, Ilixe brings its professional expertise to build security into your website at every stage of the development lifecycle.</p>
+          </div>
+		  <div class="col-md-4">
+            <span class="fa-stack fa-4x">
+              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+              <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
+            </span>
+            <h4 class="service-heading">E-Commerce</h4>
+            <p class="text-muted">We help companies comfortably hit their revenue growth targets with the perfect mix of online presence, mobile outreach and sophisticated backend capabilities.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-light" id="portfolio">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">Portfolio</h2>
+            <h3 class="section-subheading text-muted">Got an interesting project in mind? Contact us and kickstart it now.</h3>
+          </div>
+        </div>
+        <div class="row">
+          <!--<div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fa fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/portfolio/" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4>Natique</h4>
+              <p class="text-muted">Illustration</p>
+            </div>
+          </div>-->
+         </div>
+      </div>
+    </section>
+	
+    <section id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">About</h2>
+            <h3 class="section-subheading text-muted">We are always learning and evolving to develop the highest quality work in Web Development, Professional Web Design, Social Networks and Ecommerce. Not to mention, in a friendly and professional manner.</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <ul class="timeline">
+              <li>
+                <div class="timeline-image">
+                  <img class="rounded-circle img-fluid" src="img/about/1.jpg" alt="">
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4>2014-2015</h4>
+                    <h4 class="subheading">Our Humble Beginnings</h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p class="text-muted">We developed in house private cloud storage with opensource technologies and started to planning to make them usable for enterprise usage to reduce cost.</p>
+                  </div>
+                </div>
+              </li>
+              <li class="timeline-inverted">
+                <div class="timeline-image">
+                  <img class="rounded-circle img-fluid" src="img/about/2.jpg" alt="">
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4>2015 - 2017</h4>
+                    <h4 class="subheading">Australia & USA</h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p class="text-muted">Worked full-time with USA real state web solution company from India. This included solution, design and marketing of the properties for rent or sell.</p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="timeline-image">
+                  <img class="rounded-circle img-fluid" src="img/about/3.jpg" alt="">
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4>October 2017</h4>
+                    <h4 class="subheading">Transition to Full Service of our own</h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p class="text-muted">UI/UX and Web Design Our in-house, award-winning web and graphic designers recognize the fact that usability, functionality, and visualization are the three important factors of an application interface or website. We worked to ensure that digital marketing goals are realized with the designs we create.</p>
+                  </div>
+                </div>
+              </li>
+              <li class="timeline-inverted">
+                <div class="timeline-image">
+                  <h4>Be Part
+                    <br>Of Our
+                    <br>Story!</h4>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <div class="row" style="color:#fff;">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">Contact Us</h2>
+            <h3 class="section-subheading text-muted">Thank you for your interest in {{webData.websiteName}} and our services. Please fill out the form below or e-mail us at {{webData.email}} and we will get back to you promptly regarding your request.</h3>
+          </div>
+        </div>
+        <div class="row">
+			<div class="col-lg-6 my-auto" style="color:#fff;">
+				<div class="col-lg-12">
+					<h2>Connect to Start</h2><br>
+				</div>
+			<div class="col-lg-12">
+				E-mail - <a ng-href="mailto:{{webData.email}}" class="link-color">{{webData.email}}</a><br>
+				USA - <a ng-href="tel:{{webData.phone1}}" class="link-color">{{webData.phone1_format}}</a><br>
+				India - <a ng-href="tel:{{webData.phone2}}" class="link-color">{{webData.phone2_format}}</a>
+			</div><br>
+			<div class="col-lg-12">
+			{{webData.websiteName}} is a full-service digital marketing, web design and web development agency servicing all over the world
+			</div><br>
+			<div class="col-lg-12">
+				<ul class="list-inline intro-social-buttons">
+					<li class="list-inline-item" ng-repeat = "social in webData.socials" style="padding-top: 20px;">
+						<a ng-href="{{social.link}}" class="btn btn-secondary btn-lg" target="_blank">
+							<i class="fa fa-{{social.name}} fa-fw"></i>
+							<span class="network-name">{{social.name}}</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+          </div>
+		  <div class="col-lg-6 my-auto" style="color:#fff;">
+				<form role="form" ng-controller="FormCtrl" ng-submit="submitForm()">
+					<div class="form-group floating-label-form-group">
+						<label for="InputName" style="color: #fff;">Name</label>
+						<input type="text" class="form-control form-control1j" id="InputName" placeholder="Your Name *" required ng-model="form.name" style="color: #fff;padding: 10px;" autocomplete="nope">
+					</div>
+				<div class="form-group floating-label-form-group">
+					<label for="InputEmail" style="color: #fff;">Email</label>
+					<input type="email" class="form-control form-control1j" id="InputEmail" placeholder="Your Email *" required ng-model="form.email" style="color: #fff;padding: 10px;" autocomplete="nope">
+				</div>
+				  
+				<div class="form-group floating-label-form-group">
+					<label for="InputPhone" style="color: #fff;">Phone</label>
+					<input type="text" class="form-control form-control1j" id="InputPhone" placeholder="Your Phone" required ng-model="form.phone" style="color: #fff;padding: 10px;" autocomplete="nope">
+				</div>
+				<div class="form-group floating-label-form-group">
+					<label for="InputMessage" style="color: #fff;">Message</label>
+					<textarea class="form-control form-control1j" id="InputMessage" Placeholder="Your Message *" required ng-model="form.message" style="color: #fff;height: 130px;padding: 10px;"></textarea>
+				</div>
+				<div class="margin-top-15px">
+					<button class="btn btn-primary btn-lg btn-block" ngClick="Submit" ng-disabled="isDisabled">Submit</button>
+				</div>
+				</form>
+			</div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <span class="copyright"><a href="https://ilixe.com">{{webData.domain}}</a> 2017</span>
+          </div>
+          <div class="col-md-4">
+            <ul class="list-inline social-buttons">
+              <li class="list-inline-item" ng-repeat = "social in webData.socials">
+                <a ng-href="{{social.link}}" target="_blank">
+                  <i class="fa fa-{{social.name}}"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <ul class="list-inline quicklinks">
+              <li class="list-inline-item">
+                <a data-toggle="modal" href="#privacy">Privacy Policy</a>
+              </li>
+              <li class="list-inline-item">
+                <a data-toggle="modal" href="#disclaimer">Terms of Use</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+	
+    <!--
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+		<div ng-include = "'data/portfolio1.htm'"></div>
+    </div>
+	<div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+		<div ng-include = "'data/portfolio2.htm'"></div>
+    -->
+    </div>
+	<div class="portfolio-modal modal fade" id="privacy" tabindex="-1" role="dialog" aria-hidden="true">
+		<div ng-include = "'include/privacy.htm'"></div>
+    </div>
+	<div class="portfolio-modal modal fade" id="disclaimer" tabindex="-1" role="dialog" aria-hidden="true">
+		<div ng-include = "'include/disclaimer.htm'"></div>
+    </div>
+	
+  <div class="modal fade" id="alertModal" tabindex="-1" role="dialog" aria-labelledby="alertModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="alertModalLabel">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body" id="alertModalBody">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Ok</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+	<link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href="css/MontserratFonts.css" rel="stylesheet" type="text/css">
+  <link href='css/KaushanFonts.css' rel='stylesheet' type='text/css'>
+  <link href='css/DroidFonts.css' rel='stylesheet' type='text/css'>
+  <link href='css/RobotoFonts.css' rel='stylesheet' type='text/css'>
+  <link href="css/agency.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/floating-labels.css">
+	<script src = "js/angular.min.js"></script>
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="js/jqBootstrapValidation.js"></script>
+  <script src="js/agency.min.js"></script>
+	
+	<script>
+	var app = angular.module('app',[]);
+		app.service('MetaService', function() {
+		   var metaTitle = '';
+		   var metaDescription = '';
+		   var metaKeywords = '';
+		   var metaAuthor = '';
+		   return {
+			  set: function(newTitle, newMetaDescription, newKeywords,newAuthor) {
+				  metaKeywords = newKeywords;
+				  metaDescription = newMetaDescription;
+				  metaTitle = newTitle; 
+				  metaAuthor = newAuthor; 
+			  },
+			  metaTitle: function(){ return metaTitle; },
+			  metaDescription: function() { return metaDescription; },
+			  metaKeywords: function() { return metaKeywords; },
+			  metaAuthor: function(){ return metaAuthor; }
+		   }
+		});
+	app.controller('myCtrl',function($scope,$rootScope,MetaService,$http){
+		$rootScope.metaservice = MetaService;
+			var url = "config/data.json";
+			$http.get(url).then( function(r) {
+			$scope.webData = r.data;
+			$rootScope.metaservice.set(r.data['title'],r.data['description'],r.data['keyword'],r.data['author']);
+			});
+	   });
+	app.controller('FormCtrl', function ($scope, $http) {
+	$scope.isDisabled = false;
+	
+	$scope.disableButton = function() {
+        $scope.isDisabled = true;
+    }
+	
+	var formData = {
+		name: "default",
+		email: "default",
+		phone: "default",
+		message: "default",
+	};
+	$scope.submitForm = function() {
+    $.getJSON( "https://api.ilixe.com", $.param($scope.form) )
+      .done(function( json ) {
+        if(json.success==true){
+          $('.form-control1j').val("");
+          $('div').removeClass("floating-label-form-group-with-value");
+          $('.modal-header').css({"background-color": "#007BB7","color": "#fff"});
+          $('#alertModalLabel').html('Alert');
+          $('#alertModalBody').html('Mail Sent. Someone is on the way to answer you!');
+          $('#alertModal').modal('show');
+        }else{
+          $('.modal-header').css({"background-color": "#f2dede","color": "#a94442"});
+          $('#alertModalLabel').html('Alert');
+          $('#alertModalBody').html('Sorry Mail Send error! Please contact us at <b>support@ilixe.com</b>.');
+          $('#alertModal').modal('show');
+        }
+    })
+    .fail(function( jqxhr, textStatus, error ) {
+      $('.modal-header').css({"background-color": "#f2dede","color": "#a94442"});
+      $('#alertModalLabel').html('Alert');
+      $('#alertModalBody').html('Sorry Mail Send error! Please contact us at <b>support@ilixe.com</b>.');
+      $('#alertModal').modal('show');
+  });
+    $scope.isDisabled = false;
+	};
+});
+	
+$(function() {
+	$("body").on("input propertychange", ".floating-label-form-group", function(e) {
+	$(this).toggleClass("floating-label-form-group-with-value", !!$(e.target).val());
+	$('.form-control1j').css({"background":"none;"});
+	}).on("focus", ".floating-label-form-group", function() {
+		$(this).addClass("floating-label-form-group-with-focus");
+		$('.form-control1j').css({"color":"#fff !important;","background":"none"});
+	}).on("blur", ".floating-label-form-group", function() {
+		$(this).removeClass("floating-label-form-group-with-focus");
+	}).on("click", ".floating-label-form-group", function() {
+		$(this).removeClass("floating-label-form-group-with-focus");
+		//$('.form-control1j::placeholder').css({"color":"#fff !important","background":"none"});
+	});
+});	 
+
+ $(document).ready(function(){
+  var i = 1;
+  var count = $('.type > p').length;
+function timeout() {
+    setTimeout(function () {
+      
+    $('.type > p').hide();
+    $(".type > p:nth-child("+i+")" ).show();
+    if(i==count) { i=1; } 
+    else { i+=1 }
+        timeout();
+    }, 3000);
+}
+
+ timeout();
+});
+      </script>
+	  <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/5a33af3af4461b0b4ef88e7a/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+  </body>
+</html>

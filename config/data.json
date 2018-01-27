@@ -1,0 +1,30 @@
+{
+"description":"Ilixe is a professional website design and development group in India since 2015. We are Trusted web design service provider.",
+"keyword":"web development India, India web development, website developers India, Indian web developers, website developers in India, web development in India, website development in India, website development India, web design India, website design India",
+"author":"Ilixe",
+"websiteName":"Ilixe",
+"domain":"ILIXE.com",
+"email":"support@ilixe.com",
+"phone1":"+18455821747",
+"phone1_format":"+1 (845) 582-1747",
+"phone2":"+919429858397",
+"phone2_format":"+91 (942) 985-8397",
+"title":"Ilixe - Technologically Innovating",
+"heading":"Technologically Innovating",
+"socials":[{"name":"facebook", "link":"https://www.facebook.com/ilixe"},{"name":"twitter", "link":"https://twitter.com/ilixecom"},{"name":"linkedin", "link":"https://www.linkedin.com/in/ilixe"}],
+"products":[
+{"name":"News", "link":"news.php","img":"img/product/news.png","text":"Very fast news Search Engine."},
+{"name":"Youtube Downloader", "link":"youtube","img":"img/product/youtube.png","text":"Download Youtube videos hassle free."},
+{"name":"Image Size", "link":"imagesize.php","img":"img/product/imagesize.png","text":"This too can be used to reduce image size (in KB) to exactly match your requirement."},
+{"name":"Html Color", "link":"colorhtml","img":"img/product/colorhtml.png","text":"This helps you to choose your favourite color."},
+{"name":"Link to Screenhost", "link":"webtool","img":"img/product/webtool.png","text":"This helps you to get the screenshot in jpg pdf format."},
+{"name":"Ping Test", "link":"ping.php","img":"img/product/ping.png","text":"Ping Test helps you to check if your server is online."},
+{"name":"People search","link":"people.php","img":"img/product/people.png","text":"Search for people and phone no"},
+{"name":"Base Encode","link":"baseencode.php","img":"img/product/baseencode.png","text":"Code/Decode String to base64"},
+{"name":"Dns & Whois","link":"dns_whois.php","img":"img/product/dns_whois.png","text":"Check Dns & Whois"},
+{"name":"Domain Availability","link":"domain_avail.php","img":"img/product/domain_avail.png","text":"Check Domain Availability"},
+{"name":"Check ip","link":"ip.php","img":"img/product/ip.png","text":"Check ip"},
+{"name":"Get your md5 Hash","link":"md5.php","img":"img/product/md5.png","text":"Get your md5 Hash instantly"},
+{"name":"URL Encode/Decode","link":"urlencode.php","img":"img/product/urlencode.png","text":"Encode/Decode Url String hassle free"}
+]
+}
